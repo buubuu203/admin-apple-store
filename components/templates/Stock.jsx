@@ -43,7 +43,7 @@ const Stock = () => {
 				<form className="space-y-6" action="#">
 					<div className="w-full h-64">
 						<Image
-							src="https://bizweb.dktcdn.net/100/287/440/products/ao-khoac-local-brand-dep-nhieu-mau-form-rong-dep-5.jpg?v=1662543061970"
+							src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__5.png"
 							unoptimized
 							width={10}
 							height={100}
@@ -100,11 +100,11 @@ const Stock = () => {
 					{[1, 2, 3, 4, 5].map((item) => (
 						<div
 							key={item}
-							className="w-full bg-white rounded-lg h-72 flex flex-col p-4 gap-2 m-auto"
+							className="w-full bg-white rounded-lg h-80 flex flex-col p-4 gap-2 m-auto"
 						>
-							<div className="w-full h-[85%]">
+							<div className="w-full ">
 								<Image
-									src="https://bizweb.dktcdn.net/100/287/440/products/ao-khoac-local-brand-dep-nhieu-mau-form-rong-dep-5.jpg?v=1662543061970"
+									src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__5.png"
 									unoptimized
 									width={10}
 									height={100}

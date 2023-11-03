@@ -24,8 +24,8 @@
 	.bg_admin {
 		background: linear-gradient(
 			112.9deg,
-			#fffae7 0%,
-			rgba(0, 0, 0, 0.716) 100%
+			rgb(194, 221, 221),
+			rgba(0, 5, 58, 0.593)
 		);
 	}
 	#hamburger:checked ~ div > #bar-mobile {

@@ -7,27 +7,27 @@ const InvoiceManagersPage = () => {
     const columns = columnTableInvoiceManagers()
     const datasets = [
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
+            phoneNumber: '0917192680',
             status: 'Đang giao'
         },
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
+            phoneNumber: '0917192680',
             status: 'Đang giao'
         },
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
+            phoneNumber: '0917192680',
             status: 'Đang giao'
         }
     ]

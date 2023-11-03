@@ -109,7 +109,7 @@ const AdminLayout = ({ children }) => {
 			<input id="hamburger" type="checkbox" className="hidden" defaultChecked />
 			<header className="z-10 bg-white border-b-[1px] h-14 min-h-[56px] flex items-center justify-between px-6">
 				<Link href="/admin" className="h-16 w-16 md:block hidden " passHref>
-					<div className="bg-[url('/logo.png')] bg-cover bg-no-repeat w-full h-full" />
+					{/* <div className="bg-[url('/logo.png')] bg-cover bg-no-repeat w-full h-full" /> */}
 				</Link>
 
 				<div className="container flex items-center justify-between h-full mx-auto  dark:text-purple-300">

@@ -23,7 +23,7 @@ const Discount = () => {
 				<form className="space-y-6" action="#">
 					<div className="w-1/2 h-34 m-auto">
 						<Image
-							src="https://bizweb.dktcdn.net/100/287/440/products/ao-khoac-local-brand-dep-nhieu-mau-form-rong-dep-5.jpg?v=1662543061970"
+							src="https://nhistore.com.vn/wp-content/uploads/2023/09/iphone-15-promax-bluetitanium-nhistore.png"
 							unoptimized
 							width={10}
 							height={100}
@@ -76,7 +76,7 @@ const Discount = () => {
 					<Modal
 						handleClose={handleCloseAdd}
 						isOpen={isAddNew}
-						title="Tạo khuyễn mãi"
+						title="Tạo khuyến mãi"
 						size="md"
 					>
 						<form className="space-y-6" action="#">
@@ -133,7 +133,7 @@ const Discount = () => {
 									htmlFor="text"
 									className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
 								>
-									Phân trăm giảm giá
+									Phần trăm giảm giá
 								</label>
 								<input
 									type="number"
@@ -158,7 +158,7 @@ const Discount = () => {
 					class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-800"
 					onClick={() => setIsAddNew(true)}
 				>
-					Tạo mới khuyễn mãi
+					Tạo mới khuyến mãi
 				</button>
 			</div>
 			<div className="flex-1 w-full rounded-lg overflow-y-auto pb-12">
@@ -170,7 +170,7 @@ const Discount = () => {
 						>
 							<div className="w-full h-[65%]">
 								<Image
-									src="https://bizweb.dktcdn.net/100/287/440/products/ao-khoac-local-brand-dep-nhieu-mau-form-rong-dep-5.jpg?v=1662543061970"
+									src="https://nhistore.com.vn/wp-content/uploads/2023/09/iphone-15-promax-bluetitanium-nhistore.png"
 									unoptimized
 									width={10}
 									height={100}

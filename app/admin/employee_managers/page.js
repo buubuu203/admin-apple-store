@@ -7,28 +7,28 @@ const EmployeeManagersPage = () => {
     const columns = columnTableAccountManagers()
     const datasets = [
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
-            status: 'Đang giao'
+            phoneNumber: '0917192680',
+            status: 'Đã nghỉ'
         },
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
-            status: 'Đang giao'
+            phoneNumber: '0917192680',
+            status: 'Quản lý'
         },
         {
-            username: 'huy2121',
-            fullName: 'Bùi Quốc Huy',
+            username: 'buubuu203',
+            fullName: 'Châu Ngọc Bửu Đăng',
             region: 'Ho Chi Minh',
             addressCityProvince: 'Ho Chi Minh',
-            phoneNumber: '093282783239',
-            status: 'Đang giao'
+            phoneNumber: '0917192680',
+            status: 'Nhân viên'
         }
     ]
     const props = {

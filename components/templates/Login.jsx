@@ -5,13 +5,13 @@ import { Controller } from "react-hook-form";
 import { logo } from "../../public/index";
 const Login = ({ methods, handleSubmit }) => {
   return (
-    <section className="bg-black flex items-center justify-center h-screen">
+    <section className="  bg-gradient-to-b from-black to-gray-700 flex items-center justify-center h-screen">
       <div className="w-full flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8 relative">
-            <div className="bg-white rounded-full shadow-md mb-2 absolute top-0 -translate-x-1/2 left-1/2 -translate-y-2/3">
+            {/* <div className="bg-white rounded-full shadow-md mb-2 absolute top-0 -translate-x-1/2 left-1/2 -translate-y-2/3">
               <image src={logo} alt="" />
-            </div>
+            </div> */}
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Sign in to your account
             </h1>
@@ -78,7 +78,7 @@ const Login = ({ methods, handleSubmit }) => {
 
               <button
                 type="submit"
-                className="w-full text-white border font-semibold bg-blue-700  hover:bg-white hover:text-blue-700 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg text-base px-5 py-2.5 text-center"
+                className="w-full text-white border font-semibold bg-gray-700  hover:bg-white hover:text-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-500 rounded-lg text-base px-5 py-2.5 text-center"
               >
                 Sign in
               </button>

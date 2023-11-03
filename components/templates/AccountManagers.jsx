@@ -9,7 +9,7 @@ const AccountManagers = ({ columns, datasets, handleClose, isOpen }) => {
 			<Modal
 				handleClose={handleClose}
 				isOpen={isOpen}
-				title="Sửa tồn kho"
+				title="Sửa tài khoản"
 				size="md"
 			>
 				<form className="space-y-2" action="#">
@@ -19,7 +19,7 @@ const AccountManagers = ({ columns, datasets, handleClose, isOpen }) => {
 								htmlFor="text"
 								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
 							>
-								Họ và tên
+								Tên user
 							</label>
 							<input
 								type="text"
@@ -34,39 +34,7 @@ const AccountManagers = ({ columns, datasets, handleClose, isOpen }) => {
 								htmlFor="text"
 								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
 							>
-								Họ và tên
-							</label>
-							<input
-								type="text"
-								name="text"
-								placeholder=""
-								className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-								required
-							/>
-						</div>
-					</div>
-					<div className="flex gap-2">
-						<div>
-							<label
-								htmlFor="text"
-								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
-							>
-								Họ và tên
-							</label>
-							<input
-								type="text"
-								name="text"
-								placeholder=""
-								className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-								required
-							/>
-						</div>
-						<div>
-							<label
-								htmlFor="text"
-								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
-							>
-								Họ và tên
+								Tên đầy đủ
 							</label>
 							<input
 								type="text"
@@ -83,7 +51,7 @@ const AccountManagers = ({ columns, datasets, handleClose, isOpen }) => {
 								htmlFor="text"
 								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
 							>
-								Họ và tên
+								Khu vực
 							</label>
 							<input
 								type="text"
@@ -98,7 +66,39 @@ const AccountManagers = ({ columns, datasets, handleClose, isOpen }) => {
 								htmlFor="text"
 								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
 							>
-								Họ và tên
+								Tỉnh thành
+							</label>
+							<input
+								type="text"
+								name="text"
+								placeholder=""
+								className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+								required
+							/>
+						</div>
+					</div>
+					<div className="flex gap-2">
+						<div>
+							<label
+								htmlFor="text"
+								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
+							>
+								SĐT
+							</label>
+							<input
+								type="text"
+								name="text"
+								placeholder=""
+								className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+								required
+							/>
+						</div>
+						<div>
+							<label
+								htmlFor="text"
+								className="block mb-1 text-sm font-medium text-gray-900 dark:text-white"
+							>
+								Mật khẩu
 							</label>
 							<input
 								type="text"
