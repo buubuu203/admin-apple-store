@@ -24,7 +24,6 @@ const tabs = [
     key: "owner",
     name: "Chủ cửa hàng",
   },
-  
 ];
 const Employee = () => {
   const tab = useSearchParams().get("tab");
@@ -58,7 +57,7 @@ const Employee = () => {
                   htmlFor="name"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Tên sản phẩm
+                  Tên nhân viên
                 </label>
                 <input
                   type="text"
@@ -70,14 +69,14 @@ const Employee = () => {
               </div>
               <div>
                 <label
-                  htmlFor="number"
+                  htmlFor="tel"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Số lượng
+                  SĐT
                 </label>
                 <input
-                  type="number"
-                  name="number"
+                  type="text"
+                  name="tel"
                   placeholder=""
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   required
@@ -85,43 +84,43 @@ const Employee = () => {
               </div>
               <div>
                 <label
-                  htmlFor="number"
+                  htmlFor="role"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Phân loại
+                  Vai trò
                 </label>
                 <div className="flex justify-between items-center">
                   <div className="flex gap-1">
-                    <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                      S
+                    <p className="px-1 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
+                      Nhân viên
                     </p>
-                    <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                      M
+                    <p className="px-1 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
+                      Quản lý
                     </p>
-                    <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                      L
+                    <p className="px-1 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
+                      Chủ cửa hàng
                     </p>
                   </div>
-                  <div className="flex">
+                  {/* <div className="flex">
                     <p className="w-6 h-6 rounded-full border-2 bg-red-500" />
                     <p className="w-6 h-6 rounded-full border-2 bg-black" />
                     <p className="w-6 h-6 rounded-full border-2 bg-blue-500" />
                     <p className="w-6 h-6 rounded-full border-2 bg-green-500" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
               <div>
                 <label
-                  htmlFor="price"
+                  htmlFor="cccd"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
-                  Giá sản phẩm
+                  CCCD
                 </label>
                 <input
-                  type="number"
-                  name="price"
-                  id="price"
+                  type="text"
+                  name="cccd"
+                  id="cccd"
                   placeholder=""
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   required
@@ -168,27 +167,59 @@ const Employee = () => {
           <Modal
             handleClose={handleCloseAdd}
             isOpen={isAddNew}
-            title="Tạo sản phẩm"
+            title="Thêm nhân viên"
           >
             <form className="space-y-6" action="#">
+              <div className="flex items-center justify-center w-full">
+                <label
+                  htmlFor="dropzone-file"
+                  className="flex flex-col items-center justify-center w-full h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                >
+                  <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                    <svg
+                      aria-hidden="true"
+                      className="w-10 h-10 mb-3 text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                      />
+                    </svg>
+                    <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                      <span className="font-semibold">Click to upload</span> or
+                      drag and drop
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      SVG, PNG, JPG or GIF (MAX. 800x400px)
+                    </p>
+                  </div>
+                  <input id="dropzone-file" type="file" className="hidden" />
+                </label>
+              </div>
               <div className="flex">
-                <div className="w-1/2 h-64">
+                {/* <div className="w-1/2 h-64">
                   <Image
-                    src={avt}
+                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__5.png"
                     unoptimized
                     width={10}
                     height={100}
                     objectFit="cover"
                     className="w-full h-full object-contain"
                   />
-                </div>
+                </div> */}
                 <div className="flex-1 flex flex-col gap-2">
                   <div>
                     <label
                       htmlFor="name"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Tên sản phẩm
+                      Tên nhân viên
                     </label>
                     <input
                       type="text"
@@ -200,14 +231,14 @@ const Employee = () => {
                   </div>
                   <div>
                     <label
-                      htmlFor="number"
+                      htmlFor="tel"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Số lượng
+                      SĐT
                     </label>
                     <input
-                      type="number"
-                      name="number"
+                      type="text"
+                      name="tel"
                       placeholder=""
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                       required
@@ -215,43 +246,37 @@ const Employee = () => {
                   </div>
                   <div>
                     <label
-                      htmlFor="number"
+                      htmlFor="role"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Phân loại
+                      Vai trò
                     </label>
                     <div className="flex justify-between items-center">
                       <div className="flex gap-1">
-                        <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                          S
+                        <p className="p-1 rounded-md border-2 border-gray-500 flex items-center text-slate-700 justify-center font-bold text-xs">
+                          Nhân viên
                         </p>
-                        <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                          M
+                        <p className="p-1 rounded-md border-2 border-gray-500 flex items-center text-slate-700 justify-center font-bold text-xs">
+                          Quản lý
                         </p>
-                        <p className="w-7 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                          L
+                        <p className="p-1 rounded-md border-2 border-gray-500 flex items-center text-slate-700 justify-center font-bold text-xs">
+                          Chủ cửa hàng
                         </p>
-                      </div>
-                      <div className="flex">
-                        <p className="w-6 h-6 rounded-full border-2 bg-black" />
-                        <p className="w-6 h-6 rounded-full border-2 bg-white" />
-                        <p className="w-6 h-6 rounded-full border-2 bg-slate-500" />
-                        <p className="w-6 h-6 rounded-full border-2 bg-pink-300" />
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <label
-                      htmlFor="price"
+                      htmlFor="cccd"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Giá sản phẩm
+                      CCCD
                     </label>
                     <input
-                      type="number"
-                      name="price"
-                      id="price"
+                      type="text"
+                      name="cccd"
+                      id="cccd"
                       placeholder=""
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                       required
@@ -275,7 +300,7 @@ const Employee = () => {
             class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 hover:bg-blue-800"
             onClick={() => setIsAddNew(true)}
           >
-            Tạo sản phẩm
+            Thêm nhân viên
           </button>
         </div>
       </div>
@@ -296,31 +321,23 @@ const Employee = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="w-fit p-2 h-7 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                IPHONE 15 PRO MAX
+              <p className="w-fit  h-7 rounded-md  flex items-center text-black justify-center font-bold text-xs">
+                HUỲNH PHƯỚC LÂN
               </p>
 
               <div className="w-full text-white text-sm flex-1 flex items-center justify-between">
-                <p class="text-white bg-red-600 font-medium rounded-lg text-xs px-4 py-2">
-                  Giá: 29.000.000
-                </p>
-                <div className="flex">
-                  <p className="w-6 h-6 rounded-full border-2 bg-black" />
-                  <p className="w-6 h-6 rounded-full border-2 bg-white" />
-                  <p className="w-6 h-6 rounded-full border-2 bg-slate-500" />
-                  <p className="w-6 h-6 rounded-full border-2 bg-pink-300" />
-                </div>
-              </div>
-              <div className="w-full text-white text-sm flex-1 flex items-center justify-between">
-                <div className="flex gap-1">
-                  <p className="p-1 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                    128GB
-                  </p>
-                  <p className="p-1 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                    256GB
-                  </p>
-                  <p className="p-1 rounded-md border-2 border-black flex items-center text-black justify-center font-bold text-xs">
-                    512GB
+                <div className="">
+                  <div className="flex gap-2">
+                    <p className=" flex items-center text-black justify-center font-bold text-xs">
+                      NV
+                    </p>
+                    <p className=" flex items-center text-gray-700 justify-center font-semibold text-xs">
+                      0917192680
+                    </p>
+                  </div>
+
+                  <p className="  text-gray-700 font-semibold text-xs">
+                    1234567891011
                   </p>
                 </div>
                 <button
